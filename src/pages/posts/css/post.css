@@ -1,0 +1,11 @@
+.swiper-button-next, .swiper-button-prev{
+  color: #fff;
+  transition: all .3s;
+
+}
+.swiper-button-next:hover, .swiper-button-prev:hover{
+  color: rgb(192 132 252);
+}
+/* .swiper-pagination{
+  color: #fff;
+} */
