@@ -9,8 +9,6 @@ export function App(){
   
   const { item } = Database()
 
-
-
   useLayoutEffect(()=>{
     gsap.registerPlugin(ScrollTrigger)
     gsap.to('.home-start',{
