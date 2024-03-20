@@ -125,7 +125,10 @@ export function AddPhotosPost() {
   }
 
   return (
-    <div className="h-screen flex justify-center items-center w-full" id="fundo-add">
+    <div
+      className="h-screen flex justify-center items-center w-full"
+      id="fundo-add"
+    >
       <form
         onSubmit={handleSubmit(addPhotsPost)}
         className="w-full mx-auto h-screen flex flex-col justify-center items-center space-y-3 bg-zinc-300"

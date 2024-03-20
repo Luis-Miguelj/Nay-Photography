@@ -2,10 +2,10 @@ import React from 'react'
 import ReactDOM from 'react-dom/client'
 import { App } from './app.tsx'
 import './index.css'
-import 'swiper/css';
-import 'swiper/css/navigation';
-import 'swiper/css/pagination';
-import 'swiper/css/scrollbar';
+import 'swiper/css'
+import 'swiper/css/navigation'
+import 'swiper/css/pagination'
+import 'swiper/css/scrollbar'
 
 import { Header } from './components/header/header.tsx'
 import { createBrowserRouter, RouterProvider } from 'react-router-dom'
@@ -15,16 +15,16 @@ import { PagePost } from './pages/posts/page-post.tsx'
 const router = createBrowserRouter([
   {
     path: '/',
-    element: <App />
+    element: <App />,
   },
   {
     path: '/:id',
-    element: <PagePost />
+    element: <PagePost />,
   },
   {
     path: '/add-post',
-    element: <AddPhotosPost />
-  }
+    element: <AddPhotosPost />,
+  },
 ])
 
 ReactDOM.createRoot(document.getElementById('root')!).render(
