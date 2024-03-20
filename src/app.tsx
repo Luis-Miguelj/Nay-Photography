@@ -3,45 +3,9 @@ import { MoveRight } from 'lucide-react'
 import { Database } from './firebase/database/database'
 import { Link } from 'react-router-dom'
 import { motion } from 'framer-motion'
-// import { gsap } from 'gsap'
-// import { ScrollTrigger } from 'gsap/ScrollTrigger'
+
 export function App() {
   const { item } = Database()
-
-  // const controlTxt = useAnimation()
-  // const alignItems = useAnimation()
-
-  // useLayoutEffect(()=>{
-  //   gsap.registerPlugin(ScrollTrigger)
-  //   gsap.to('.home-start',{
-  //     alignItems: 'center'
-  //   })
-  //   gsap.to('.home-txt', {
-  //     x: 0,
-  //     opacity: 1,
-  //     // position: 'relative'
-  //   })
-
-  //   return ()=>{
-  //     gsap.killTweensOf('.home-txt')
-  //     gsap.killTweensOf('.home-start')
-  //     // gsap.killTweensOf('.content-post')
-  //   }
-  // },[])
-
-  // useEffect(()=>{
-  //  alignItems.start({
-  //   alignItems: 'center'
-  //  })
-  //   controlTxt.start({
-  //     x: 0,
-  //     opacity: 1,
-  //   });
-
-  //   return () => {
-  //     controlTxt.stop();
-  //   };
-  // },[])
 
   return (
     <div>
