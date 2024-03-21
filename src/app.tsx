@@ -30,7 +30,7 @@ export function App() {
           Nay Photography
         </motion.p>
       </motion.div>
-      <div className="h-96 max-w-5xl mx-auto my-5">
+      <div className="h-96 max-w-5xl max-md:w-full mx-auto my-5">
         {item.map((items, index) => {
           // console.log(items.imagens[0].photos)
           return (

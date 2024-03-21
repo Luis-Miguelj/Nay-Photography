@@ -26,9 +26,9 @@ export function PagePost() {
               key={index}
               className="flex max-md:flex-col items-center h-full w-full"
             >
-              <div className="w-1/2 max-md:w-full h-screen">
+              <div className="w-1/2 max-md:w-full h-full break-words">
                 <motion.div
-                  className="h-96 flex flex-col space-y-5 justify-start items-start max-md:items-center max-md:justify-center max-md:h-96 bg-zinc-50"
+                  className="h-96 flex flex-col space-y-5 justify-start items-start max-md:items-center max-md:justify-center"
                   animate={{ opacity: [0, 1], x: [-500, 0] }}
                 >
                   <h1 className="text-3xl font-medium max-sm:text-lg">
@@ -40,7 +40,7 @@ export function PagePost() {
                 </motion.div>
               </div>
               <motion.div
-                className="w-1/2 max-md:w-full bg-zinc-50 max-md:px-5 flex items-center justify-center overflow-hidden h-full rounded"
+                className="w-1/2 max-md:w-full max-md:px-5 flex items-center justify-center overflow-hidden h-full rounded"
                 animate={{ opacity: [0, 1] }}
                 transition={{ duration: 0.8 }}
               >
