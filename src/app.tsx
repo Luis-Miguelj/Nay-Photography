@@ -16,15 +16,15 @@ export function App() {
         id="image-home"
       >
         <motion.h1
-          className="text-6xl font-semibold text-zinc-100 max-sm:text-xl"
-          transition={{ duration: 1 }}
+          className="text-6xl font-semibold text-zinc-100 max-sm:text-2xl"
+          transition={{ duration: 0.8 }}
           animate={{ x: [-700, 0], opacity: [0, 1] }}
         >
           Seja bem vindo(a)
         </motion.h1>
         <motion.p
           className="text-base font-medium text-zinc-100 max-sm:text-sm"
-          transition={{ duration: 1 }}
+          transition={{ duration: 0.8 }}
           animate={{ x: [-700, 0], opacity: [0, 1] }}
         >
           Nay Photography
@@ -34,7 +34,7 @@ export function App() {
         {item.map((items, index) => {
           // console.log(items.imagens[0].photos)
           return (
-            <div
+            <motion.div
               key={index}
               className="w-full mx-auto flex flex-col my-10 justify-center items-center"
               id={`animated-${index}`}
@@ -46,13 +46,17 @@ export function App() {
                   </div>
                   <p className="text-sm font-medium">{items.description}</p>
                 </div>
-                <div
+                <motion.div
                   className="w-full h-96 max-sm:h-72 rounded shadow"
                   style={{
                     backgroundImage: `url('${items.imagens[0].photos}')`,
                     backgroundRepeat: 'no-repeat',
                     backgroundSize: 'cover',
                   }}
+                  animate={{
+                    opacity: [0, 1],
+                  }}
+                  transition={{ duration: 0.8 }}
                 >
                   <div className="w-full h-full bg-gradient-to-l from-zinc-900 flex items-end justify-end px-10 py-5">
                     <Link to={`/${items.id}`} className="text-zinc-50">
@@ -62,9 +66,9 @@ export function App() {
                       />
                     </Link>
                   </div>
-                </div>
+                </motion.div>
               </div>
-            </div>
+            </motion.div>
           )
         })}
       </div>
