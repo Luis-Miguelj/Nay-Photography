@@ -26,7 +26,7 @@ export function PostId() {
         </div>
       </div>
       <motion.div
-        className={`grid grid-cols-${currentIdItem.imagens.length > 1 ? '3' : '1'} overflow-scroll w-1/2 duration-700 h-96 items-center`}
+        className={`grid  ${currentIdItem.imagens.length <= 1 ? 'grid-cols-1' : 'grid-cols-3'} overflow-scroll w-1/2 duration-700 h-96 items-center`}
         initial={{ opacity: 0 }}
         animate={{ opacity: [0, 1] }}
         exit={{ opacity: 0 }}
