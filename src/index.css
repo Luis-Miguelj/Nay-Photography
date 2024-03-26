@@ -29,3 +29,10 @@
   transform: translateX(-700px);
   opacity: 0;
 }
+
+.swiper-pagination{
+  color: #0e0e0e;
+}
+.swiper-button-next, .swiper-button-prev{
+  color: #0e0e0e;
+}

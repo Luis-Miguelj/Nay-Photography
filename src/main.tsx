@@ -10,7 +10,8 @@ import 'swiper/css/scrollbar'
 import { Header } from './components/header/header.tsx'
 import { createBrowserRouter, RouterProvider } from 'react-router-dom'
 import { AddPhotosPost } from './pages/add-photos-post/add-photos-post.tsx'
-import { PagePost } from './pages/posts/page-post.tsx'
+// import { PagePost } from './pages/posts/page-post.tsx'
+import { PostId } from './pages/post-id/index.tsx'
 
 const router = createBrowserRouter([
   {
@@ -19,7 +20,7 @@ const router = createBrowserRouter([
   },
   {
     path: '/:id',
-    element: <PagePost />,
+    element: <PostId />,
   },
   {
     path: '/add-post',

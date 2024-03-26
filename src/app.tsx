@@ -17,14 +17,14 @@ export function App() {
       >
         <motion.h1
           className="text-6xl font-semibold text-zinc-100 max-sm:text-2xl"
-          transition={{ duration: 0.8 }}
+          transition={{ duration: 0.6 }}
           animate={{ x: [-700, 0], opacity: [0, 1] }}
         >
           Seja bem vindo(a)
         </motion.h1>
         <motion.p
           className="text-base font-medium text-zinc-100 max-sm:text-sm"
-          transition={{ duration: 0.8 }}
+          transition={{ duration: 0.6 }}
           animate={{ x: [-700, 0], opacity: [0, 1] }}
         >
           Nay Photography
@@ -37,7 +37,9 @@ export function App() {
             <motion.div
               key={index}
               className="w-full mx-auto flex flex-col my-10 justify-center items-center"
-              id={`animated-${index}`}
+              initial={{ opacity: 0, y: 100 }}
+              whileInView={{ opacity: 1, y: 0 }}
+              transition={{ duration: 0.3 }}
             >
               <div className="w-3/4 flex flex-col space-y-5 my-5">
                 <div className="flex flex-col space-y-5">
