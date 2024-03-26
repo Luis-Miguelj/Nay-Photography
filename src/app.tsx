@@ -60,7 +60,7 @@ export function App() {
                   }}
                   transition={{ duration: 0.8 }}
                 >
-                  <div className="w-full h-full bg-gradient-to-l from-zinc-900 flex items-end justify-end px-10 py-5">
+                  <div className="w-full h-full  flex items-end justify-end px-10 py-5">
                     <Link to={`/${items.id}`} className="text-zinc-50">
                       <MoveRight
                         size={40}

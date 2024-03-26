@@ -8,7 +8,7 @@ interface DatabaseProps {
   id: string
   title: string
   description: string
-  imagens: [{photos: string}]
+  imagens: [{ photos: string }]
   created: string
 }
 
