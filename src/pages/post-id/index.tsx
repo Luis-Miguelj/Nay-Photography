@@ -18,15 +18,15 @@ export function PostId() {
   }
 
   return (
-    <div className="h-screen flex gap-5 px-10 items-center ">
-      <div className="container flex flex-col gap-3 w-1/2 px-5 h-96">
+    <div className=" max-w-full mx-auto flex flex-col px-10 items-center py-6">
+      <div className="container flex flex-col gap-3 h-72 justify-center items-center max-w-4xl">
         <h1 className="text-3xl font-medium">{currentIdItem.title}</h1>
         <div className="text-sm">
           <p>{currentIdItem.description}</p>
         </div>
       </div>
       <motion.div
-        className={`grid  ${currentIdItem.imagens.length <= 1 ? 'grid-cols-1' : 'grid-cols-3'} overflow-scroll w-1/2 duration-700 h-96 items-center`}
+        className={`grid  ${currentIdItem.imagens.length <= 1 ? 'grid-cols-1' : 'grid-cols-3'} ${currentIdItem.imagens.length <= 1 ? 'w-4/6' : 'max-w-full'} h-full gap-3 mx-auto transition-all duration-700 items-center`}
         initial={{ opacity: 0 }}
         animate={{ opacity: [0, 1] }}
         exit={{ opacity: 0 }}
